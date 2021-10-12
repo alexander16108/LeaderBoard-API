@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+}
+
+.scoreHeader {
+  padding: 20px;
+}
+
+.scoreHeader h3 {
+  padding-right: 10px;
+}
+
+.scoreBoard {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.individualScores {
+  padding: 10px;
+}
+
+.lst-sty:nth-of-type(even) {
+  background-color: rgba(212, 212, 212, 0.623);
+}
+
+.displayedScores {
+  border: 1px solid black;
+  list-style-type: none;
+  width: 40%;
+}
+
+.userInput {
+  position: absolute;
+  top: 18%;
+  left: 60%;
+  width: 30pc;
+}
+
+.userInput h3 {
+  padding: 20px 0;
+}
+
+.form input {
+  margin: 7px 0;
+  padding: 7px;
+  border: 1px solid black;
+}
+
+.form input::placeholder {
+  columns: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.min-wid {
+  width: 5pc;
+  position: relative;
+  margin-left: 10pc;
+  box-shadow: 4px 5px 0px 1px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 4px 5px 0px 1px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 4px 5px 0px 1px rgba(0, 0, 0, 0.8);
+}
