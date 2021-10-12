@@ -22,15 +22,15 @@ const Score = [
 ];
 
 const populate = () => {
-  Score.forEach(element => {
+  Score.forEach((element) => {
     const template = `
     <li class='individualScores d-flex lst-sty'>
     <p >${element.Name} : <span>${element.Score}</span></p>
   </li>
   <hr/>
-    `
+    `;
     container.innerHTML += template;
   });
-}
+};
 
 populate();
