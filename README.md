@@ -1,18 +1,19 @@
 # LeaderBoard-API
 
 ## Project Description
- <!-- > "To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. You will build a simple website that allows for doing that, and you will do it using ES6 and Webpack! -->
+The LeaderBoard App is a program that shows a list of score
 
 
 ## Things done so far:
 
 ### 1. Create LeaderBoard Setup
-<!-- 
-- Use custom-built Webpack boilerplate
-- Implement app structure using classes
-- Populate to-do list dynamically on page load
-- Implement event listener using promise
-- Configure repository to deploy from Webpack output directory -->
+- Create an npm project with webpack. 
+
+- Write plain HTML markup with minimum styling (just to make the layout)
+
+- Don't make API calls.
+
+- Use ES6 modules, with import and export.
 
 <!-- ### 2. Make list interactive
 
@@ -52,7 +53,7 @@ To get a local copy up and running, follow the steps below in your terminal.
 Clone the project on CMD:
 
 ```
-<!-- git clone https://github.com/alexander16108/todo-List.git -->
+https://github.com/alexander16108/LeaderBoard-API.git
 ```
 
 ### Install
@@ -96,12 +97,12 @@ npm run start
 
 ## Screenshot of the page
 
-<!-- ![image](https://user-images.githubusercontent.com/60612329/134668112-861c82a2-d279-4602-872b-f44ac385fb1f.png) -->
+![image](https://user-images.githubusercontent.com/60612329/136966291-3d66b74a-a1e5-44a9-85e5-dadf8d1e3c47.png)
 
 
 ### Live Version Link
 
- <!-- [Live Version](https://alex-todolist.netlify.app/) -->
+https://alexander16108.github.io/LeaderBoard-API/dist
 
 
 ### Contributors
