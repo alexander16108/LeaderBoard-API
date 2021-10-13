@@ -4,9 +4,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="/src/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>LeaderBoard</title>
 <script defer src="main.js"></script></head>
 <body>
-  
+  <h1>LeaderBoard</h1>
+  <section class="scoreBoard" id="scoreBoard">
+    <div class="scoreHeader d-flex">
+      <h3>Recent Score</h3>
+      <input type="button" value="Refresh" class="min-wid">
+    </div>
+    <div class="scores">
+      <ul class="displayedScores" id="displayedScores"></ul>
+    </div>
+  </section>
+  <section class="userInput" id="userInput">
+    <h3>Add your score</h3>
+    <form class="d-flex flex-col form">
+      <input type="text" name="text" class="userName" placeholder="Your Name">
+      <input type="number" name="userScores" class="userScores" placeholder="Your Score">
+      <input type="submit" value="Submit" class="min-wid">
+    </form>
+  </section>
 </body>
 </html>
