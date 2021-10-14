@@ -1,10 +1,10 @@
-// const Url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
+const Url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
 
-// const getGame = async () => {
-//   if (localStorage.getItem('gameId')) return;
-//   const game = {
-//     name: 'LeAdErBoArD Game',
-//   };
+const getGame = async () => {
+  if (localStorage.getItem('gameId')) return;
+  const game = {
+    name: 'LeAdErBoArD Game',
+  };
 
 //   const response = await fetch(`${Url}games/`, {
 //     method: 'POST',
