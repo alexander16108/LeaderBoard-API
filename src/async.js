@@ -18,18 +18,18 @@ const getGame = async () => {
   localStorage.setItem('gameId', gameId);
 };
 
-// const refreshPage = async () => {
-//   const gameId = localStorage.getItem('gameId');
-//   const list = document.getElementById('displayedScores');
-//   list.innerHTML = '';
-//   const response = await fetch(`${Url}games/${gameId}/scores`);
-//   const scores = await response.json();
-//   scores.result.forEach((score) => {
-//     const li = document.createElement('li');
-//     li.innerText = `${score.user}: ${score.score}`;
-//     list.append(li);
-//   });
-// };
+const refreshPage = async () => {
+  const gameId = localStorage.getItem('gameId');
+  const list = document.getElementById('displayedScores');
+  list.innerHTML = '';
+  const response = await fetch(`${Url}games/${gameId}/scores`);
+  const scores = await response.json();
+  scores.result.forEach((score) => {
+    const li = document.createElement('li');
+    li.innerText = `${score.user}: ${score.score}`;
+    list.append(li);
+  });
+};
 
 // const submit = async (e) => {
 //   e.preventDefault();
