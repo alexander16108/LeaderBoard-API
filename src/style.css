@@ -14,6 +14,10 @@
 body {
   height: 100vh;
   width: 100vw;
+  background-image: url(https://cdn.theatlantic.com/thumbor/bqwpEeaKFLgnkC0MUZcQGVA0Cpg=/1041x0:2447x1406/1080x1080/media/img/mt/2020/12/72775b407192b21eed14a430ce2c4c95_4096x1716_52a62062/original.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(132, 156, 173);
 }
 
 .d-flex {
@@ -45,8 +49,15 @@ h1 {
   padding: 10px;
 }
 
+.lst-sty {
+  color: black;
+  font-size: 25px;
+  font-weight: 400;
+  padding: 4px;
+}
+
 .lst-sty:nth-of-type(even) {
-  background-color: rgba(212, 212, 212, 0.623);
+  background-color: rgba(189, 186, 186, 0.623);
 }
 
 .displayedScores {
@@ -70,6 +81,8 @@ h1 {
   margin: 7px 0;
   padding: 7px;
   border: 1px solid black;
+  background-color: rgba(97, 97, 163, 0.445);
+  outline: none;
 }
 
 .form input::placeholder {
@@ -85,4 +98,11 @@ h1 {
   box-shadow: 4px 5px 0 1px rgba(0, 0, 0, 0.8);
   -webkit-box-shadow: 4px 5px 0 1px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: 4px 5px 0 1px rgba(0, 0, 0, 0.8);
+  background-color: rgba(97, 97, 163, 0.445);
+  border-radius: 30px;
+}
+
+input:hover,
+.min-wid:hover {
+  transform: scale(1.1);
 }
