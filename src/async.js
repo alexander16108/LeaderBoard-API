@@ -53,4 +53,8 @@ const submit = async (e) => {
   score.value = '';
 };
 
-module.exports = { getGame, refreshPage, submit };
+module.exports = {
+  getGame,
+  refreshPage,
+  submit
+};
