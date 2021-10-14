@@ -38,7 +38,6 @@ const submit = async (e) => {
   const name = document.getElementById('userName');
   const score = document.getElementById('userScores');
 
-  console.log(score.value)
   const newScore = {
     user: name.value,
     score: score.value,
