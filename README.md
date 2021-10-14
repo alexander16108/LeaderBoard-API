@@ -15,13 +15,18 @@ The LeaderBoard App is a program that shows a list of score
 
 - Use ES6 modules, with import and export.
 
-<!-- ### 2. Make list interactive
+### 2. Get the API
 
-- Track task status
-- Implement Web Storage API for local storage of tasks
+- Create a new game with the name of your choice by using the API.
+
+- Implement the "Refresh" button (receiving data from the API and parsing the JSON). 
+
+- Implement the form "Submit" button (sending data to the API). 
+
+- Use async and await JavaScript features to consume the API. 
 
 
-### 3. Adding Functionalites
+<!-- ### 3. Adding Functionalites
 
 - I remove all hardcoded items from the tasks `array`.
 - I created a new JavaScript file for the new functionality.
