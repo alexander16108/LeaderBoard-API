@@ -102,7 +102,7 @@ npm run start
 
 ## Screenshot of the page
 
-![image](https://user-images.githubusercontent.com/60612329/136966291-3d66b74a-a1e5-44a9-85e5-dadf8d1e3c47.png)
+![image](https://user-images.githubusercontent.com/60612329/137308844-e2dcb363-d40e-4c6c-82e7-7baf5daae584.png)
 
 
 ### Live Version Link
