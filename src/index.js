@@ -1,36 +1,21 @@
 import './style.css';
+import {
+  getGame,
+  refreshPage,
+  submit,
+} from './async.js';
 
-const container = document.getElementById('displayedScores');
+const displayScores = () => {
+  const ul = document.getElementById('displayedScores');
+  const li = document.createElement('li');
+  ul.appendChild(li);
 
-const Score = [
-  {
-    Name: 'martins law',
-    Score: 20,
-  },
-  {
-    Name: 'martins law',
-    Score: 20,
-  },
-  {
-    Name: 'martins law',
-    Score: 20,
-  },
-  {
-    Name: 'martins law',
-    Score: 20,
-  },
-];
+  getGame();
+  refreshPage();
 
-const populate = () => {
-  Score.forEach((element) => {
-    const template = `
-    <li class='individualScores d-flex lst-sty'>
-    <p >${element.Name} : <span>${element.Score}</span></p>
-  </li>
-  <hr/>
-    `;
-    container.innerHTML += template;
-  });
+  document.getElementById('submitScore').addEventListener('click', submit);
+
+  document.getElementById('refresh').addEventListener('click', refreshPage);
 };
 
-populate();
+document.addEventListener('DOMContentLoaded', displayScores);
