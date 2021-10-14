@@ -134,4 +134,4 @@ Give a ⭐️ if you like this project!
 
 ### Licence 
 
-This Project is MIT licensed
+[This Project is MIT licensed](https://github.com/alexander16108/LeaderBoard-API/blob/e177207b7229a1d0cbc831a0f667e751170c76fc/LICENSE)
