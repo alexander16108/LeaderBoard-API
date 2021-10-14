@@ -2,8 +2,8 @@ import './style.css';
 import {
   getGame,
   refreshPage,
-  submit
-} from './async.js'
+  submit,
+} from './async.js';
 
 const displayScores = () => {
   const ul = document.getElementById('displayedScores');
@@ -16,6 +16,6 @@ const displayScores = () => {
   document.getElementById('submitScore').addEventListener('click', submit);
 
   document.getElementById('refresh').addEventListener('click', refreshPage);
-}
+};
 
 document.addEventListener('DOMContentLoaded', displayScores);

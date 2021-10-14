@@ -1,7 +1,7 @@
 const Url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
 
 const getGame = async () => {
-  if (localStorage.getItem('gameId')) return;
+  if (localStorage.getItem('leaderBoardId')) return;
   const game = {
     name: 'LeAdErBoArD Game',
   };
@@ -14,15 +14,15 @@ const getGame = async () => {
     body: JSON.stringify(game),
   });
   const data = await response.json();
-  const gameId = data.result.split(' ')[3];
-  localStorage.setItem('gameId', gameId);
+  const leaderBoardId = data.result.split(' ')[3];
+  localStorage.setItem('leaderBoardId', leaderBoardId);
 };
 
 const refreshPage = async () => {
-  const gameId = localStorage.getItem('gameId');
+  const leaderBoardId = localStorage.getItem('leaderBoardId');
   const list = document.getElementById('displayedScores');
   list.innerHTML = '';
-  const response = await fetch(`${Url}games/${gameId}/scores`);
+  const response = await fetch(`${Url}games/${leaderBoardId}/scores`);
   const scores = await response.json();
   scores.result.forEach((score) => {
     const li = document.createElement('li');
@@ -34,15 +34,16 @@ const refreshPage = async () => {
 const submit = async (e) => {
   e.preventDefault();
 
-  const gameId = localStorage.getItem('game');
+  const leaderBoardId = localStorage.getItem('leaderBoardId');
   const name = document.getElementById('userName');
   const score = document.getElementById('userScores');
 
+  console.log(score.value)
   const newScore = {
     user: name.value,
     score: score.value,
   };
-  await fetch(`${Url}games/${gameId}/scores`, {
+  await fetch(`${Url}games/${leaderBoardId}/scores`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -56,5 +57,5 @@ const submit = async (e) => {
 module.exports = {
   getGame,
   refreshPage,
-  submit
+  submit,
 };
