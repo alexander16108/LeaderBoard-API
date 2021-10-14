@@ -26,7 +26,7 @@ const refreshPage = async () => {
   const scores = await response.json();
   scores.result.forEach((score) => {
     const li = document.createElement('li');
-    li.className = 'lst-sty'
+    li.className = 'lst-sty';
     li.innerText = `${score.user}: ${score.score}`;
     list.append(li);
   });
