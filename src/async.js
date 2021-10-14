@@ -6,17 +6,17 @@ const getGame = async () => {
     name: 'LeAdErBoArD Game',
   };
 
-//   const response = await fetch(`${Url}games/`, {
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'application/json',
-//     },
-//     body: JSON.stringify(game),
-//   });
-//   const data = await response.json();
-//   const gameId = data.result.split(' ')[3];
-//   localStorage.setItem('gameId', gameId);
-// };
+  const response = await fetch(`${Url}games/`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(game),
+  });
+  const data = await response.json();
+  const gameId = data.result.split(' ')[3];
+  localStorage.setItem('gameId', gameId);
+};
 
 // const refreshPage = async () => {
 //   const gameId = localStorage.getItem('gameId');
