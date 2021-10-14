@@ -104,7 +104,7 @@ npm run start
 
 ### Live Version Link
 
-https://alexander16108.github.io/LeaderBoard-API/dist
+[live link](https://alexander16108.github.io/LeaderBoard-API/dist)
 
 
 ### Contributors
