@@ -31,26 +31,26 @@ const refreshPage = async () => {
   });
 };
 
-// const submit = async (e) => {
-//   e.preventDefault();
+const submit = async (e) => {
+  e.preventDefault();
 
-//   const gameId = localStorage.getItem('game');
-//   const name = document.getElementById('userName');
-//   const score = document.getElementById('userScores');
+  const gameId = localStorage.getItem('game');
+  const name = document.getElementById('userName');
+  const score = document.getElementById('userScores');
 
-//   const newScore = {
-//     user: name.value,
-//     score: score.value,
-//   };
-//   await fetch(`${Url}games/${gameId}/scores`, {
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'application/json',
-//     },
-//     body: JSON.stringify(newScore),
-//   });
-//   name.value = '';
-//   score.value = '';
-// };
+  const newScore = {
+    user: name.value,
+    score: score.value,
+  };
+  await fetch(`${Url}games/${gameId}/scores`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(newScore),
+  });
+  name.value = '';
+  score.value = '';
+};
 
 // module.exports = { getGame, refreshPage, submit };
