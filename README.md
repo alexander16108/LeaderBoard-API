@@ -15,23 +15,19 @@ The LeaderBoard App is a program that shows a list of score
 
 - Use ES6 modules, with import and export.
 
-<!-- ### 2. Make list interactive
+### 2. Make list interactive
 
 - Track task status
 - Implement Web Storage API for local storage of tasks
 
 
-### 3. Adding Functionalites
+### 3. final Touches
 
-- I remove all hardcoded items from the tasks `array`.
-- I created a new JavaScript file for the new functionality.
-- Implemented a function for adding a new task `(add a new element to the array)`.
-- Implemented a function for editing task descriptions.
-- Implemented a function for deleting a task `(remove an element from the array)`.
-- Implemented a function for the "Clear all completed" button `(use filter() method)`.
-- By default new tasks have the property completed set to false and the property index set to the value of the new` array length`.
-- Deleting a task updates all remaining items' indexes, so they represent the current list order and are unique.
-- All changes to the To Do List are saved in `local storage`. -->
+- Now you should improve the look and feel of the application, adding the styles of your choice. ✔️ 
+
+- Please keep the general layout of the wireframe, this is the only mandatory requirement. ✔️ 
+
+- You can use plain CSS or any CSS framework, it's up to you. ✔️ 
 
 ## Built With
 
